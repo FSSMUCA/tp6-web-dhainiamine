@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatrice Web - TP6</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Calculatrice Web</h1>
+        <p>Effectuez des opérations et visualisez l'historique.</p>
+    </header>
+
+    <main>
+        <section class="calculator-section">
+            <h3>Calculatrice Locale</h3>
+            <form id="calculator-form">
+                <div class="input-group">
+                    <label for="numberA">Nombre A :</label>
+                    <input type="number" id="numberA" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="operation">Opération :</label>
+                    <select id="operation" required>
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                        <option value="*">×</option>
+                        <option value="/">÷</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="numberB">Nombre B :</label>
+                    <input type="number" id="numberB" required>
+                </div>
+
+                <button type="submit" id="calculateBtn">Calculer</button>
+            </form>
+
+            <div id="error-message" class="error-zone"></div>
+        </section>
+
+        <section id="history-section" class="card">
+            <h3>Historique des opérations</h3>
+            <ul id="history-list">
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© TP6 - DHAINI Mohamed Amine</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
